@@ -1,0 +1,6 @@
+#loading {
+    display: none; /* Hide loading indicator initially */
+}
+h1 {
+    color: blueviolet;
+}
