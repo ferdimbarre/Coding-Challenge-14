@@ -45,3 +45,4 @@ function ticketsData (tickets) {
     }); //organizes the display  in the html
     ticketPlace.innerHTML= ticketsinHTML ; 
 }
+// i added the finally in the fetchAPI 
