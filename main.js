@@ -27,4 +27,21 @@ function showError (message) {
     const errorMessage =document.getElementById("error-msg")
     errorMessage.textContent = message
  };  //will display error message if there is an error 
- 
+
+
+// function to display tickets data 
+function ticketsData (tickets) {
+    const ticketPlace = document.getElementById("display-tickets")
+    let ticketsinHTML = ``;
+    tickets.forEach((ticket) => {
+        ticketsinHTML += `
+        <section class="ticket" >
+        <h3>${ticket.title}</h3>
+        <p>${ticket.body}</p>
+        <p>Name: ${ticket.userId}</p>
+        <p> ID: ${ticket.id}</p>
+    </section> 
+ ` 
+    }); //organizes the display  in the html
+    ticketPlace.innerHTML= ticketsinHTML ; 
+}
